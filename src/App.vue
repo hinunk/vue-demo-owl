@@ -1,7 +1,7 @@
 <template>
   <div>
     <pre><div id="app" class="styleEditor" ref="goto">{{code}}</div></pre>
-    <div class="resumeEditor">
+    <div class="container">
       <div class='owl'>
         <div class='body'>
           <div class='wing'></div>
@@ -68,41 +68,13 @@ html{
   -webkit-transform: rotateY(10deg) translateZ(-100px) ;
           transform: rotateY(10deg) translateZ(-100px) ;
 }
-.resumeEditor{
+.container{
   position: fixed; right: 0; top: 0;
   padding: .5em;  margin: .5em;
   width: 48vw; height: 90vh; 
   border: 1px solid;
   background: white; color: #222;
   overflow: auto;
-}
-.resumeEditor{
-  padding: 2em;
-}
-.resumeEditor h2{
-  display: inline-block;
-  border-bottom: 1px solid;
-  margin: 1em 0 .5em;
-}
-.resumeEditor ul,.resumeEditor ol{
-  list-style: none;
-}
-.resumeEditor ul> li::before{
-  content: '•';
-  margin-right: .5em;
-}
-.resumeEditor ol {
-  counter-reset: section;
-}
-.resumeEditor ol li::before {
-  counter-increment: section;            
-  content: counters(section, ".") " ";  
-  margin-right: .5em;
-}
-.resumeEditor blockquote {
-  margin: 1em;
-  padding: .5em;
-  background: #ddd;
 }
 .owl {
   position: relative;
